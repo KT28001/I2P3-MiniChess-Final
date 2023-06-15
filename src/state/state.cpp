@@ -14,7 +14,7 @@
 int State::evaluate(){
   // [TODO] design your own evaluation function
   int value = 0;
-  float piece_value[10] = {0,1,3.05,3.33,5.63,9.5,200};
+  static const float piece_value[10] = {0,1,3.05,3.33,5.63,9.5,200};
   for(int i = 0;i < BOARD_H;i++){
     for(int j = 0;j < BOARD_W;j++){
         value += piece_value[this->board.board[1-this->player][i][j]];

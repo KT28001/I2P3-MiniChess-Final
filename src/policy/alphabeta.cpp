@@ -1,15 +1,15 @@
 #include <cstdlib>
 //#include <fstream>
-#include <unistd.h>
+//#include <unistd.h>
 
 #include "../state/state.hpp"
 #include "./alphabeta.hpp"
 
-int max(int a, int b){
+inline int max(int a, int b){
     if(a > b) return a;
     return b;
 }
-int min(int a, int b){
+inline int min(int a, int b){
     if(a < b) return a;
     return b;
 }
