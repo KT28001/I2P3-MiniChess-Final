@@ -1,6 +1,8 @@
 #!/bin/bash
-./build/main ./baselines/linux/baseline2 ./build/player_alphabeta 
+./build/main ./build/player_submission ./baselines/linux/baseline2 
 
+#./build/player_alphabeta 
+#./baselines/linux/mcts
+#./build/player_minimax
 #
-#./build/player_minimax 
-#./build/player_random 
+#./baselines/linux/baseline2
